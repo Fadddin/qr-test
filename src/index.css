@@ -22,7 +22,7 @@ body {
 
     @media (max-width: 768px) {
         .section_shi::before {
-            height: 80vh;
+            height: 70vh;
             border-radius: 0 0 50% 50%/0 0 100% 100%;
             transform: scaleX(2);
         }
