@@ -34,7 +34,7 @@ function App() {
     return (
         <div className="flex justify-center">
             <div className="flex flex-row w-full md:w-[90%] lg:w-[80%] md:space-x-4 lg:space-x-4">
-                <div className="basis-1/4 hidden lg:block xl:block">
+                <div className="basis-1/5 hidden lg:block xl:block">
                     <>
                         <div className="sm:justify-start flex flex-wrap justify-center lg:border-r-2 lg:py-[4rem] lg:pr-4 lg:border-r-slate-400 mt-20">
                             <div className="w-full flex justify-center pt-4">
@@ -123,9 +123,9 @@ function App() {
                         </div>
                     </>
                 </div>
-                <div className="basis-full lg:basis-3/4 flex justify-center items-center space-x-4 lg:max-h-screen">
-                    <section className="relative w-full min-h-screen flex justify-center items-center overflow-hidden section_shi">
-                        <div className="relative z-10 mt-8 mx-auto max-w-3xl flex flex-col items-center">
+                <div className="basis-full lg:basis-3/4 flex justify-center items-center space-x-4 lg:max-h-screen ">
+                    <section className="relative w-full min-h-screen flex justify-center items-center overflow-hidden section_shi mt-0 lg:mt-8 md:mt-8 rounded-lg ">
+                        <div className="relative z-10 mx-auto max-w-3xl flex flex-col items-center -translate-y-16 lg:-translate-y-6 md:-translate-y-6 ">
 
                             <div>
                                 <div className="py-4 flex justify-center">
@@ -172,9 +172,9 @@ function App() {
                             <div>
                                 <div className="flex flex-col py-6">
                                     <div className="flex justify-center">
-                                        <p className="">Share this QR Code to share your</p>
+                                        <p className="font-serif">Share this QR Code to share your</p>
                                     </div>
-                                    <div className="flex justify-center font-bold text-2xl font-Alice">
+                                    <div className="flex justify-center font-bold text-2xl font-Alice font-serif">
                                         Botanical Data
                                     </div>
                                 </div>
@@ -182,17 +182,17 @@ function App() {
 
                             <div>
 
-                                <div className="flex flex-row pt-10 pb-6 tab:hidden space-x-8">
+                                <div className="flex flex-row pt-4 pb-4 tab:hidden space-x-8">
                                     <div className="basis-1/5 flex items-center justify-center">
                                         <div className="w-[2.5rem] h-[2.5rem] rounded-full bg-slate-300 flex justify-center items-center hover:cursor-pointer">
                                             <IoIosArrowBack className={`w-[2rem] h-[2rem]`} />
                                         </div>
                                     </div>
                                     <div className="basis-3/5 relative">
-                                        <div className="flex flex-row justify-center">
-                                            <div className="flex flex-col w-[14rem] h-[14rem]">
+                                        <div className="flex flex-row justify-center mb-2">
+                                            <div className="flex flex-col w-[12rem] h-[12rem]">
                                                 <img src={qr} className="rounded-lg" alt="qrt" />
-                                                <div className="flex items-center justify-center mt-2 text-2xl font-semibold font-Alice">
+                                                <div className="flex items-center justify-center mt-2 text-2xl font-semibold font-Alice text-center">
                                                     Name
                                                 </div>
                                             </div>
@@ -302,11 +302,11 @@ function App() {
                             </div> */}
 
                             <div>
-                                <div className="py-6 -mt-[2rem]">
+                                <div className="py-6 -mt-[2rem] translate-y-24 lg:translate-y-0">
                                     <div className="mt-[4rem] flex flex-row justify-center md:justify-between">
-                                        <div className="basis-1/2 flex justify-center md:justify-end md:pr-[2rem]">
+                                        <div className="basis-1/2 flex justify-center md:justify-end md:pr-[2rem] ">
                                             <button
-                                                className={`px-10 md:px-12 pt-2 md:py-2 pb-4 md:rounded-md rounded-3xl text-white shadow-lg md:shadow-xl bg-green-500 md:bg-green-300 hover:bg-green-600 md:hover:bg-green-300 disabled:bg-green-500 disabled:hover:cursor-not-allowed hover:cursor-pointer`}
+                                                className={`px-10 md:px-12 pt-2 md:py-2 pb-4 md:rounded-md rounded-3xl text-white shadow-lg md:shadow-xl bg-green-500 md:bg-green-500 hover:bg-green-600 md:hover:bg-green-600 disabled:bg-green-500 disabled:hover:cursor-not-allowed hover:cursor-pointer`}
                                             >
                                                 <div className="flex flex-col">
                                                     <div className="flex justify-center items-center">
@@ -321,7 +321,7 @@ function App() {
                                         </div>
                                         <div className="basis-1/2 flex justify-center md:justify-start md:pl-[1rem]">
                                             <button
-                                                className={`px-8 md:px-10 pt-2 md:py-8 pb-4 md:rounded-md rounded-3xl text-white shadow-xl md:shadow-lg bg-green-500 md:bg-green-300 hover:bg-green-600 md:hover:bg-green-300 disabled:bg-green-500 disabled:hover:cursor-not-allowed hover:cursor-pointer`}
+                                                className={`px-8 md:px-10 pt-2 md:py-8 pb-4 md:rounded-md rounded-3xl text-white shadow-xl md:shadow-lg bg-green-500 md:bg-green-500 hover:bg-green-600 md:hover:bg-green-600 disabled:bg-green-500 disabled:hover:cursor-not-allowed hover:cursor-pointer`}
                                             >
                                                 <div className="flex flex-col">
                                                     <div className="flex justify-center items-center">
@@ -337,9 +337,9 @@ function App() {
                                     </div>
 
                                     <div className="w-full">
-                                        <div className="flex justify-center w-full py-6">
+                                        <div className="flex justify-center w-full pt-6">
                                             <button
-                                                className={`px-[5rem] md:px-[8rem] py-3 md:py-2 text-white rounded-lg md:rounded-md text-lg font-Kanit shadow-lg bg-green-500 hover:bg-green-600 hover:cursor-pointer`}
+                                                className={`px-[5rem] md:px-[9rem] py-3 md:py-2 text-white rounded-lg md:rounded-md text-lg font-Kanit shadow-lg bg-green-500 hover:bg-green-600 hover:cursor-pointer`}
                                             >
                                                 Add a new Vcard
                                             </button>
@@ -351,10 +351,10 @@ function App() {
                         </div>
                     </section>
                     <div className="hidden md:block lg:block xl:block">
-                        <p className="text-center text-xl font-semibold mt-6">
+                        <p className="text-center text-xl font-semibold mt-8 py-4 translate-y-4">
                             Other Cards
                         </p>
-                        <div className="h-[90vh] overflow-y-scroll">
+                        <div className="h-[90vh] overflow-y-scroll mx-4">
                             <div className="flex flex-col justify-center items-center">
                                 {array.map((arr, index) => (
                                     <div key={index} className="h-40 w-40 bg-slate-200 text-white m-2 text-center rounded-md">
@@ -363,7 +363,7 @@ function App() {
                                 ))}
                             </div>
                         </div>
-                        <div className="flex justify-center items-center space-x-4 my-3">
+                        <div className="bg-white flex justify-center items-center space-x-4 my-3 -translate-y-8 py-2">
                             <button className="rounded-md px-3 py-2 bg-slate-600 text-white">Prev</button>
                             <p className="text-lg font-semibold">1/10</p>
                             <button className="rounded-md px-3 py-2 bg-slate-600 text-white">Next</button>
